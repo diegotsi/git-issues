@@ -17,7 +17,10 @@ const styles = StyleSheet.create({
     flex: 1,
     marginLeft: metrics.baseMargin,
   },
-
+  icon: {
+    color: colors.light,
+    marginLeft: 4,
+  },
   avatar: {
     width: 50,
     height: 50,

@@ -6,7 +6,7 @@ import {
   View,
   TouchableOpacity,
 } from 'react-native';
-
+import Icon from 'react-native-vector-icons/FontAwesome';
 import { withNavigation } from 'react-navigation';
 
 import styles from './styles';
@@ -20,6 +20,7 @@ const ListRepo = ({repo, navigation: { navigate }}) => {
         <Text style={styles.name}>{repo.name}</Text>
         <Text style={styles.login}>{repo.owner.login}</Text>
       </View>
+      <Icon style={styles.icon} name="chevron-right" size={16} />
     </TouchableOpacity>
   )
 }
